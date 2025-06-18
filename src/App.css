@@ -1,0 +1,39 @@
+.flow-container {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+}
+
+.volunteer-card {
+  transition: all 0.3s ease;
+}
+
+.volunteer-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.donation-card {
+  border-left: 4px solid #22c55e;
+}
+
+.status-indicator {
+  animation: pulse 2s infinite;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #22c55e 0%, #16a34a 100%);
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s ease-out;
+}
